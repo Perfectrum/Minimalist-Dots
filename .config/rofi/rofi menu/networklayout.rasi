@@ -94,8 +94,10 @@ textbox-prompt-colon {
 #textbox-prompt-colon {
   expand: false;
   str: "Network";
-  background-color: @accent;
-  text-color: @background;
+  background-color: @background-light;
+  text-color: @accent;
+   
+
 }
 #horibox {
   padding: 0px;
@@ -128,4 +130,6 @@ element.selected.active {
   text-color:  @on;
   border-color: @off;
 }
+
+
 
