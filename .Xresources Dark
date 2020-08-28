@@ -1,4 +1,8 @@
 
+
+
+
+
 Xft.dpi: 96
 Xft.antialias: true
 Xft.hinting: true
@@ -30,22 +34,26 @@ URxvt.keysym.C-i:resize-font:reset
 
 ! =======color scheme==========
 
-*background:	#1D1F28
-*foreground:	#FDFDFD
-*cursorColor:	#BF80FF
+*background:#1D1F28
+*foreground:#FDFDFD
+*cursorColor:#BF80FF
 *color0:	#282A36
 *color1:	#29A3A3
-*color2:	#B3D9FF
-*color3:	#008060
+*color2:	#8cd9b3
+*color3:	#d98cb3
 *color4:	#A3A3C2
 *color5:	#FFd9b3
 *color6:	#7575A3
 *color7:	#D9D9D9
 *color8:	#414458
 *color9:	#29A3A3
-*color10:	#B3D9FF
-*color11:	#008060
+*color10:	#8cd9b3
+*color11:	#d98cb3
 *color12:	#A3A3C2
 *color13:	#FFD9B3
 *color14:	#7575A3
 *color15:	#D9D9D9
+
+
+
+
