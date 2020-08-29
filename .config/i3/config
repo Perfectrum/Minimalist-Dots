@@ -1,4 +1,5 @@
 
+
 ###################set mod key###################
 
 set $mod Mod1
@@ -14,7 +15,7 @@ bindsym $mod+Return exec urxvt
 ###################i3 window controls###################
 
 #kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # change focus of window
 bindsym $mod+j focus left
@@ -47,7 +48,7 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+#bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -55,13 +56,13 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+shift+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -69,7 +70,7 @@ bindsym $mod+a focus parent
 ###################resize window################### 
 
 ## toggle resize mode ##
-bindsym $mod+r mode "resize"
+bindsym $mod+x mode "resize"
 
 ## resize bindings ##
 mode "resize" {
@@ -79,16 +80,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym j resize shrink width 30 px or 30 ppt
+        bindsym k resize grow height 30 px or 30 ppt
+        bindsym l resize shrink height 30 px or 30 ppt
+        bindsym semicolon resize grow width 30 px or 30 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 30 px or 30 ppt
+        bindsym Down resize grow height 30 px or 30 ppt
+        bindsym Up resize shrink height 30 px or 30 ppt
+        bindsym Right resize grow width 30 px or 30 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -97,14 +98,21 @@ mode "resize" {
 
 ################### moving floating windows ###################
 
-bindsym $mod+y focus floating; mode "moveit"
+bindsym $mod+a focus floating; mode "moveit"
 mode "moveit" {
-    bindsym Up move up 20px
-    bindsym Left move left 20px
-    bindsym Down move down 20px
-    bindsym Right move right 20px
+    bindsym Up move up 60px
+    bindsym Left move left 60px
+    bindsym Down move down 60px
+    bindsym Right move right 60px
     bindsym Escape mode "default"
+    bindsym Return mode "default"
 }
+
+for_window [workspace="3"] floating enable move position mouse resize set 600 400 
+for_window [workspace="8"] floating enable move position mouse resize set 520 200 [class="^URxvt$"] 
+for_window [workspace="1"] floating enable move position mouse resize set 520 200 [class="^URxvt$"] 
+
+
 
 ################### set workspaces ###################
 
@@ -183,8 +191,8 @@ bindsym $mod+Shift+F4 exec --no-startup-id scrot -u -e 'feh $f -x'
 ################### assign specific apps to keybindings ###################
 
 bindsym $mod+d exec rofi -show drun -eh 2 -bw 0 
-bindsym $mod+Shift+f exec firefox
-bindsym $mod+Shift+t exec thunar
+bindsym $mod+f exec firefox
+bindsym $mod+t exec thunar
 bindsym $mod+Shift+m exec vscodium
 
 
@@ -193,13 +201,13 @@ assign [class="firefox"] $ws2
 assign [class="Thunar"] $ws3
 assign [class="vlc"] $ws6
 assign [class="VSCodium"] $ws4
-assign [class="VirtualBox Manager"] $ws8
+assign [class="VirtualBox Manager"] $ws7
 
 ################### setting gaps ###################
 
 ##border##
 
-#border_radius 8
+#border_radius 2
 
 ##hide_edge_borders##
 for_window [class="^.*"] border pixel 0
@@ -239,7 +247,7 @@ exec --no-startup-id nm-applet
 
 ################## change wallpaper ######################
 
-exec_always --no-startup-id feh --bg-fill /home/eloy/Downloads/1.jpg
+exec_always --no-startup-id feh --bg-fill /home/eloy/Downloads/wallpaper.jpg
 
 ################### keybindings to custom script initialization ###################
 
@@ -248,8 +256,22 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 ############## to start rofi widgets ###############
 
-bindsym $mod+shift+s exec /home/eloy/Downloads/sc/powermenu.sh 
-bindsym $mod+shift+w exec /home/eloy/Downloads/sc/network.sh 
+bindsym $mod+n exec /home/eloy/Downloads/sc/powermenu.sh 
+bindsym $mod+m exec /home/eloy/Downloads/sc/network.sh 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
