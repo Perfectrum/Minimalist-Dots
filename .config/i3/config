@@ -204,12 +204,7 @@ assign [class="VirtualBox Manager"] $ws7
 
 ################### setting gaps ###################
 
-##border##
 
-#border_radius 2
-
-##hide_edge_borders##
-#for_window [class="^.*"] border pixel 0
 
 # Set inner/outer gaps
 gaps inner 25
@@ -270,7 +265,7 @@ bindsym $mod+m exec /home/eloy/Downloads/sc/network.sh
   client.urgent           #333333 #333333 #333333 
   client.placeholder      #333333 #333333 #333333  
 
-default_border pixel 1
+for_window [class=".*"] border pixel 1
 
 
 
