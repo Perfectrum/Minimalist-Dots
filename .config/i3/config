@@ -1,5 +1,4 @@
 
-
 ###################set mod key###################
 
 set $mod Mod1
@@ -210,7 +209,7 @@ assign [class="VirtualBox Manager"] $ws7
 #border_radius 2
 
 ##hide_edge_borders##
-for_window [class="^.*"] border pixel 0
+#for_window [class="^.*"] border pixel 0
 
 # Set inner/outer gaps
 gaps inner 25
@@ -249,6 +248,7 @@ exec --no-startup-id nm-applet
 
 exec_always --no-startup-id feh --bg-fill /home/eloy/Downloads/wallpaper.jpg
 
+
 ################### keybindings to custom script initialization ###################
 
 ## to start polybar ##
@@ -258,6 +258,34 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 bindsym $mod+n exec /home/eloy/Downloads/sc/powermenu.sh 
 bindsym $mod+m exec /home/eloy/Downloads/sc/network.sh 
+
+
+
+#######border color #########
+
+# class                   border  backgr. text    
+  client.focused          #333333 #333333 #333333 
+  client.focused_inactive #333333 #333333 #333333 
+  client.unfocused        #333333 #333333 #333333 
+  client.urgent           #333333 #333333 #333333 
+  client.placeholder      #333333 #333333 #333333  
+
+default_border pixel 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
