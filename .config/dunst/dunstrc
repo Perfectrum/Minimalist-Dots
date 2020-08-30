@@ -6,17 +6,17 @@
     shrink = no
     transparency = 0
     notification_height = 0
-    separator_height = 1
+    separator_height = 0
     padding = 8
     horizontal_padding = 8
-    frame_width = 0
-    frame_color = "#d9d9d9"
+    frame_width = 3.5
+    frame_color = "#000000"
     separator_color = frame
     sort = yes
     idle_threshold = 120
-    corner_radius = 3
+    corner_radius = 6
 
-    font = System San Francisco 8
+    font = System San Francisco 9
     line_height = 0
     markup = full
     format = "<b>%s</b>\n%b"
@@ -45,7 +45,7 @@
     class = Dunst
     startup_notification = false
     verbosity = mesg
-    corner_radius = 10
+    corner_radius = 6
     ignore_dbusclose = false
     force_xinerama = false
     mouse_left_click = close_current
@@ -61,22 +61,25 @@
     history = ctrl+grave
     context = ctrl+shift+period
 
-frame_color = "#d9d9d9"
-separator_color = "#263640"
+frame_color = "#000000"
+separator_color = "#FFFFFF"
 
 [base16_low]
     msg_urgency = low
-    background = "#d9d9d9"
-    foreground = "#263640"
+    background = "#FFFFFF"
+    foreground = "#000000"
 
 [base16_normal]
     msg_urgency = normal
-    background = "#d9d9d9"
-    foreground = "#263640"
+    background = "#FFFFFF"
+    foreground = "#000000"
 
 [base16_critical]
     msg_urgency = critical
-    background = "#d9d9d9"
-    foreground = "#263640"
+    background = "#FFFFFF"
+    foreground = "#000000"
+
+
+
 
 
