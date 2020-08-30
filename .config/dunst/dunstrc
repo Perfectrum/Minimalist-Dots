@@ -1,83 +1,74 @@
 [global]
-    monitor = 0
-    follow = mouse
-    geometry = "350x8-36+36"
-    indicate_hidden = yes
-    shrink = no
-    transparency = 0
-    notification_height = 0
-    separator_height = 0
-    padding = 8
-    horizontal_padding = 8
-    frame_width = 3.5
-    frame_color = "#000000"
-    separator_color = frame
-    sort = yes
-    idle_threshold = 120
-    corner_radius = 6
+title = Dunst
+class = Dunst
+monitor = 0
+follow = keyboard
+geometry = "350x8-36+36"
+indicate_hidden = yes
+shrink = yes
+line_height = 4
+startup_notification = true
 
-    font = System San Francisco 9
-    line_height = 0
-    markup = full
-    format = "<b>%s</b>\n%b"
-    alignment = left
-    vertical_alignment = center
-    show_age_threshold = 60
-    word_wrap = yes
-    ellipsize = middle
+transparency = 10
+separator_height = 1
+padding = 6
+horizontal_padding = 5
+frame_width = 6
+frame_color = "#e6e6ff"
+separator_color = "#e5f5f5"
 
-    ignore_newline = no
-    stack_duplicates = true
-    hide_duplicate_count = false
+font = BreezeSans 8
 
-    show_indicators = no
-    icon_position = left
-    max_icon_size = 75
-    icon_path = /usr/share/icons/gnome/22x22/devices/
-    sticky_history = yes
-    history_length = 20
-    dmenu = /usr/bin/dmenu -p dunst:
-    browser = /usr/bin/firefox -new-tab
-    always_run_script = true
+line_height = 2
+markup = full
+format = "<span size='x-large' font_desc='BreezeSans 8' weight='bold' foreground='#63c5ea'>%s</span>\n%b"
+alignment = center
+vertical_alignment = top
+idle_threshold = 120
+show_age_threshold = 60
+sort = no
+word_wrap = yes
+ignore_newline = no
+stack_duplicates = false
+hide_duplicate_count = yes
+show_indicators = no
+sticky_history = no
+history_length = 20
+always_run_script = true
+corner_radius = 0
+icon_position = right
+max_icon_size = 75
 
-    title = Dunst
+icon_path = /usr/share/icons/Papirus-Light/48x48/actions/:/usr/share/icons/Papirus-Light/48x48/apps/:/usr/share/icons/Papirus-Light/48x48/devices/:/usr/share/icons/Papirus-Light/48x48/emblems/:/usr/share/icons/Papirus-Light/48x48/emotes/:/usr/share/icons/Papirus-Light/48x48/mimetypes/:/usr/share/icons/Papirus-Light/48x48/places/:/usr/share/icons/Papirus-Light/48x48/status/
 
-    class = Dunst
-    startup_notification = false
-    verbosity = mesg
-    corner_radius = 6
-    ignore_dbusclose = false
-    force_xinerama = false
-    mouse_left_click = close_current
-    mouse_middle_click = do_action, close_current
-    mouse_right_click = close_all
-[experimental]
-    per_monitor_dpi = false
+browser = firefox
+
+mouse_left_click = close_current
+mouse_middle_click = do_action
+mouse_right_click = close_all
 
 [shortcuts]
+close = ctrl+space
+close_all = ctrl+shift+space
+history = ctrl+Escape
+context = ctrl+shift+period
 
-    close = ctrl+space
-    close_all = ctrl+shift+space
-    history = ctrl+grave
-    context = ctrl+shift+period
+[urgency_low]
+timeout = 3
+background = "#e6e6ff"
+foreground = "#373e4d"
 
-frame_color = "#000000"
-separator_color = "#FFFFFF"
+[urgency_normal]
+timeout = 6
+background = "#e6e6ff"
+foreground = "#373e4d"
 
-[base16_low]
-    msg_urgency = low
-    background = "#FFFFFF"
-    foreground = "#000000"
+[urgency_critical]
+timeout = 0
+background = "#e6e6ff"
+foreground = "#373e4d"
 
-[base16_normal]
-    msg_urgency = normal
-    background = "#FFFFFF"
-    foreground = "#000000"
 
-[base16_critical]
-    msg_urgency = critical
-    background = "#FFFFFF"
-    foreground = "#000000"
 
 
 
