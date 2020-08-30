@@ -1,5 +1,6 @@
 
 
+
 ;################## Color Scheme ####################
 
 [colors]
@@ -78,8 +79,8 @@ offset-y = 7px
 fixed-center = true
 background = ${colors.background}
 foreground = ${colors.foreground}
-padding-left = 1
-padding-right = 8
+padding-left = 4
+padding-right = 4
 module-margin-left = 0
 module-margin-right = 0
 font-0 = BreezeSans:pixelsize=13:style=Bold;-10
@@ -143,14 +144,14 @@ type = custom/script
 exec =  /home/eloy/Downloads/sc/date.sh
 interval = 1
 tail = true
-label-foreground = #009966
+label-foreground = #4d4d4d
 
 [module/power-menu]
 
 type = custom/script
 
 exec = echo "󰐥"
-format-foreground = #b30000
+format-foreground =#FF1A1A
 click-left = /home/eloy/Downloads/sc/powermenu.sh &
 
 
@@ -162,8 +163,8 @@ type = internal/pulseaudio
 format = <label>
 
 label-volume = "󰎆 %{T2}%percentage%%%{T-}  "
-label-volume-foreground = #330066
-format-foreground = #330066
+label-volume-foreground = #4d4d4d
+format-foreground = #4d4d4d
 
 label-muted = "󰎊  "
 label-muted-foreground = #607290
@@ -179,8 +180,8 @@ format = <label>
 
 format-prefix = "󰍛 " 
 label = "%{T2}%percentage%%%{T2} "
-label-foreground =#330066
-format-foreground =#3333ff
+label-foreground =##4d4d4d
+format-foreground =#007A99
 
 
 [module/memory]
@@ -190,8 +191,8 @@ type = internal/memory
 interval = 6
 format-prefix = "󰮯 "
 label = "%{T2}%percentage_used%%%{T-} " 
-label-foreground =#330066
-format-foreground =#ac3973
+label-foreground =#4d4d4d
+format-foreground =#AC3973
 
 
 [module/launcher]
@@ -201,7 +202,7 @@ type = custom/text
 
 content = "%{T4}󰛝 %{T-}"
 content-background = ${colors.background}
-content-foreground = #263640
+content-foreground = #000000
 content-padding = 1
 content-font = 2
 click-left = rofi -show drun -eh 2 -bw 0 &
@@ -219,20 +220,20 @@ format-charging = <animation-charging> %{T3}<label-charging>%{T-}
 format-discharging =<ramp-capacity> %{T3}<label-discharging>%{T-} 
 
 format-full = 󰂄%{T3}100%%{T-}
-format-full-foreground = #330066
-label-charging-foreground = #330066
-label-discharging-foreground = #330066
+format-full-foreground = #4d4d4d
+label-charging-foreground = #4d4d4d
+label-discharging-foreground = #4d4d4d
 
 animation-charging-0 = 󱊤
 animation-charging-1 = 󱊥
 animation-charging-2 = 󱊦
-animation-charging-foreground = #00b359
+animation-charging-foreground = #00B359
 animation-charging-framerate = 900
 
-ramp-capacity-0 = %{F#ff004b}󰂃%{F-}
-ramp-capacity-1 = %{F#ff8000}󰁺%{F-}
-ramp-capacity-2 = %{F#ff8000}󰁻%{F-}
-ramp-capacity-3 = %{F#ff8000}󰁼%{F-}
+ramp-capacity-0 = %{F#FF004B}󰂃%{F-}
+ramp-capacity-1 = %{F#FF8000}󰁺%{F-}
+ramp-capacity-2 = %{F#FF8000}󰁻%{F-}
+ramp-capacity-3 = %{F#FF8000}󰁼%{F-}
 ramp-capacity-4 = 󰁽
 ramp-capacity-5 = 󰁾
 ramp-capacity-6 = 󰁿
@@ -240,7 +241,7 @@ ramp-capacity-7 = 󰂀
 ramp-capacity-8 = 󰂁
 ramp-capacity-9 = 󰂂
 ramp-capacity-10 = 󰁹 
-ramp-capacity-foreground = #ff8000
+ramp-capacity-foreground =  #adebad
 ramp-capacity-framerate = 750
 
 [module/wl]
@@ -250,6 +251,12 @@ type = custom/script
 exec = echo "  󰤢  "
 format-foreground = #008060
 click-left = /home/eloy/Downloads/sc/network.sh &
+
+
+
+
+
+
 
 
 
