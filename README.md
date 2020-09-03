@@ -9,7 +9,8 @@ Dotfiles For Customizing Linux :penguin:
 - **App Launcher n Menu** : [rofi](https://github.com/davatorium/rofi) :balloon:
 - **GTK Theme**           : [Orchis](https://github.com/vinceliuice/Orchis-theme) :balloon:
 - **File Manager**        : [Thunar](https://wiki.archlinux.org/index.php/Thunar) :balloon:
-- **Music Player Client** : [Ncmpcpp](https://wiki.archlinux.org/index.php/Ncmpcpp) :balloon:
+- **Music Player Client** : [Ncmpcpp](https://wiki.archlinux.org/index.php/Ncmpcpp)& Spotify :balloon:
+- **Fonts**               : [Material Design Icons](https://materialdesignicons.com/) , [FiraCode](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) , Breeze Sans
 
 ## Preview
 
