@@ -1,27 +1,25 @@
+
 [global]
 title = Dunst
 class = Dunst
 monitor = 0
 follow = keyboard
-geometry = "350x8-36+36"
+geometry = "350x8-76+76"
 indicate_hidden = yes
 shrink = yes
-line_height = 4
+line_height = 6
 startup_notification = true
-
-transparency = 10
+transparency = 5
 separator_height = 1
-padding = 6
-horizontal_padding = 5
-frame_width = 6
-frame_color = "#e6e6ff"
+padding = 5
+horizontal_padding = 15
+
+frame_width = 1
+frame_color = "#000000"
 separator_color = "#e5f5f5"
-
-font = BreezeSans 8
-
-line_height = 2
+font = System San Francisco 8
 markup = full
-format = "<span size='x-large' font_desc='BreezeSans 8' weight='bold' foreground='#63c5ea'>%s</span>\n%b"
+format = "<span size='x-large' font_desc='System San Francisco 8' weight='bold' foreground='#808080'>%s</span>\n%b"
 alignment = center
 vertical_alignment = top
 idle_threshold = 120
@@ -37,12 +35,9 @@ history_length = 20
 always_run_script = true
 corner_radius = 0
 icon_position = right
-max_icon_size = 75
-
+max_icon_size = 55
 icon_path = /usr/share/icons/Papirus-Light/48x48/actions/:/usr/share/icons/Papirus-Light/48x48/apps/:/usr/share/icons/Papirus-Light/48x48/devices/:/usr/share/icons/Papirus-Light/48x48/emblems/:/usr/share/icons/Papirus-Light/48x48/emotes/:/usr/share/icons/Papirus-Light/48x48/mimetypes/:/usr/share/icons/Papirus-Light/48x48/places/:/usr/share/icons/Papirus-Light/48x48/status/
-
 browser = firefox
-
 mouse_left_click = close_current
 mouse_middle_click = do_action
 mouse_right_click = close_all
@@ -55,18 +50,19 @@ context = ctrl+shift+period
 
 [urgency_low]
 timeout = 3
-background = "#e6e6ff"
+background = "#FFFFFF"
 foreground = "#373e4d"
 
 [urgency_normal]
 timeout = 6
-background = "#e6e6ff"
+background = "#FFFFFF"
 foreground = "#373e4d"
 
 [urgency_critical]
 timeout = 0
-background = "#e6e6ff"
+background = "#FFFFFF"
 foreground = "#373e4d"
+
 
 
 
