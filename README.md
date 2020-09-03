@@ -2,20 +2,20 @@
 Dotfiles For Customizing Linux :penguin:
 
 - **WM**                  : [i3](https://i3wm.org/) :balloon:
-- **Term**                : [URxvt](https://wiki.archlinux.org/index.php/Rxvt-unicode) :balloon:
+- **Term**                : [URxvt](https://wiki.archlinux.org/index.php/Rxvt-unicode) 
 - **Shell**               : [zsh](https://wiki.archlinux.org/index.php/zsh) with [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) 
-- **Compositor**          : [Picom](https://github.com/ibhagwan/picom) :balloon:
-- **Bar**                 : [Polybar](https://wiki.archlinux.org/index.php/Polybar) :balloon:
-- **App Launcher n Menu** : [rofi](https://github.com/davatorium/rofi) :balloon:
-- **GTK Theme**           : [Orchis](https://github.com/vinceliuice/Orchis-theme) :balloon:
-- **File Manager**        : [Thunar](https://wiki.archlinux.org/index.php/Thunar) :balloon:
-- **Music Player Client** : [Ncmpcpp](https://wiki.archlinux.org/index.php/Ncmpcpp)& Spotify :balloon:
+- **Compositor**          : [Picom](https://github.com/ibhagwan/picom) 
+- **Bar**                 : [Polybar](https://wiki.archlinux.org/index.php/Polybar) 
+- **App Launcher n Menu** : [rofi](https://github.com/davatorium/rofi) 
+- **GTK Theme**           : [Orchis](https://github.com/vinceliuice/Orchis-theme) 
+- **File Manager**        : [Thunar](https://wiki.archlinux.org/index.php/Thunar) 
+- **Music Player Client** : [Ncmpcpp](https://wiki.archlinux.org/index.php/Ncmpcpp)& Spotify 
 - **Fonts**               : [Material Design Icons](https://materialdesignicons.com/) , [FiraCode](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) , Breeze Sans
 
 ## Preview
 
-![Screenshot1](https://github.com/Eloysheyin/Minimalist-Dots/blob/master/light.png)
-![Screenshot2](https://github.com/Eloysheyin/Minimalist-Dots/blob/master/2020-08-28-223711_1366x768_scrot.png)
+![Screenshot1](https://github.com/Eloysheyin/Minimalist-Dots/blob/master/shot2.png)
+![Screenshot2](https://github.com/Eloysheyin/Minimalist-Dots/blob/master/shot1.png)
 
 
 
