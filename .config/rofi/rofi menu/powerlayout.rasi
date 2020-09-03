@@ -1,17 +1,16 @@
 
 
-
 @import "/home/eloy/.config/rofi/colors.rasi"
 
 
 * {
   /* General */
   text-font:                            "System San Francisco 12";
-  icon-font:                            "Material Design Icons 15";
+  icon-font:                            "Material Design Icons 14";
  
   option-6-listview-spacing:            7px;
   menu-window-padding:                  4px 4px;
-  menu-element-padding:                 23px 0px 15px -10px;
+  menu-element-padding:                 20px 0px 15px -10px;
   
 }
 
@@ -23,19 +22,17 @@
   x-offset: 44.3%;
   y-offset: -5%;
   border: 2px;
-  border-radius: 15px;
-  border-color: #d9d9d9;
+  border-radius: 10px;
+  border-color: @xfg;
  
 }
 
 * {
-  background-color: #FFFFFF;
-  text-color: #FFFFFF;
+  background-color: @xbg;
+  text-color: @xfg;
   font: @icon-font;
   border: 0px;
-  padding: 0;
-  border-radius: 15px;
-  border-color: #00191414;
+  padding: 5;
 }
 
 #horibox {
@@ -59,8 +56,13 @@
 #element {
   font: @icon-font;
   padding: @menu-element-padding;
- text-color: #FFFFFF;
+ 
 }
+
+
+
+
+
 
 
 
