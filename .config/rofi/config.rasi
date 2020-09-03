@@ -1,8 +1,9 @@
+@import "/home/eloy/.config/rofi/colors.rasi"
 configuration {
     modi: "combi,drun";
     lines: 8;
     columns: 1;
-    font: "System San Francisco 8";
+    font: "System San Francisco 8.2";
     bw: 0;
     location: 7;
     yoffset:-40;
@@ -33,7 +34,7 @@ configuration {
     display-drun: "";
     display-combi: "";
     kb-remove-word-back: "Control+BackSpace,Alt+d,Alt+BackSpace";
-    kb-accept-entry: "Control+m,q,Return,Alt+m";
+    kb-accept-entry: "Control+m,Return,Alt+m";
     kb-mode-next: "Shift+Right,Control+Tab,Alt+l,Alt+Tab";
     kb-mode-previous: "Shift+Left,Control+ISO_Left_Tab,Alt+h";
     kb-row-left: "Control+Page_Up,Control+Alt+h";
@@ -87,8 +88,8 @@ configuration {
 window {
     background-color: @xbg;
     border: 2;
-    border-color:#000000;
-    border-radius: 12px;
+    border-color:#FFFFFF;
+    border-radius: 15px;
     padding: 5;
     width: 17%;
     height: 50%;
@@ -139,11 +140,11 @@ element selected.normal {
 }
 element selected.urgent {
     background-color: rgba (0,0,0,0%);
-    text-color:       @xfg;
+    text-color:       @x19;
 }
 element selected.active {
     background-color: rgba (0,0,0,0%);
-    text-color:       @xfg;
+    text-color:       @x19;
 }
 element alternate.normal {
     background-color: rgba (0,0,0,0%);
@@ -190,31 +191,36 @@ inputbar {
     text-color: @xfg;
     padding:    2px 2px 2px 2px;
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
-    border: 2;
     border-radius: 9px;
+    border: 2;
     border-color:     @xfg;
 }
 case-indicator {
     spacing:    0;
     text-color: @xfg;
+
 }
 entry {
     spacing:    0;
     text-color: #000000;
 padding:    3px 3px 3px 3px;
+
 }
 prompt {
     spacing:    0;
     border:     3;
     border-color:     @xbg;
-    text-color: @xfg;
+    text-color: #000000;
+     border-radius: 9px;
+
 }
 textbox-prompt-colon {
     expand:     false;
     str:        "  ";
     margin:     0px 0.3000em 0.0000em 0.0000em ;
     text-color: inherit;
+
 }
 
 
-@import "/home/eloy/.config/rofi/colors.rasi"
+
