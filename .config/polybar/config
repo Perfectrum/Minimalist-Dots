@@ -362,14 +362,6 @@ exec = echo " 󰤢 "
 format-foreground = #008060
 click-left = /home/eloy/Downloads/sc/network.sh &
 
-;[module/decor-glyph]
-;type = custom/text
-;content-foreground = #a6a6a6
-;margin = 0
-
-;[module/sep]
-;inherit = module/decor-glyph
-;content = "/"
 
 [module/prev]
 type = custom/script
