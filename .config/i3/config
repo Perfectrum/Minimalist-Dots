@@ -1,4 +1,5 @@
 
+
 ###################set mod key###################
 
 set $mod Mod1
@@ -79,16 +80,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 30 px or 30 ppt
-        bindsym k resize grow height 30 px or 30 ppt
-        bindsym l resize shrink height 30 px or 30 ppt
-        bindsym semicolon resize grow width 30 px or 30 ppt
+        bindsym j resize shrink width 15 px or 15 ppt
+        bindsym k resize grow height 15 px or 15 ppt
+        bindsym l resize shrink height 15 px or 15 ppt
+        bindsym semicolon resize grow width 15 px or 15 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 30 px or 30 ppt
-        bindsym Down resize grow height 30 px or 30 ppt
-        bindsym Up resize shrink height 30 px or 30 ppt
-        bindsym Right resize grow width 30 px or 30 ppt
+        bindsym Left resize shrink width 15 px or 15 ppt
+        bindsym Down resize grow height 15 px or 15 ppt
+        bindsym Up resize shrink height 15 px or 15 ppt
+        bindsym Right resize grow width 15 px or 15 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -99,17 +100,17 @@ mode "resize" {
 
 bindsym $mod+a focus floating; mode "moveit"
 mode "moveit" {
-    bindsym Up move up 60px
-    bindsym Left move left 60px
-    bindsym Down move down 60px
-    bindsym Right move right 60px
+    bindsym Up move up 40px
+    bindsym Left move left 40px
+    bindsym Down move down 40px
+    bindsym Right move right 40px
     bindsym Escape mode "default"
     bindsym Return mode "default"
 }
 
-for_window [workspace="3"] floating enable move position mouse resize set 600 400 
-for_window [workspace="8"] floating enable move position mouse resize set 520 200 [class="^URxvt$"] 
-for_window [workspace="1"] floating enable move position mouse resize set 520 200 [class="^URxvt$"] 
+#for_window [workspace="3"] floating enable move position mouse resize set 600 400 
+#for_window [workspace="8"] floating enable move position mouse resize set 520 200 [class="^URxvt$"] 
+#for_window [workspace="1"] floating enable move position mouse resize set 520 200 [class="^URxvt$"] 
 
 
 
@@ -204,7 +205,12 @@ assign [class="VirtualBox Manager"] $ws7
 
 ################### setting gaps ###################
 
+##border##
 
+#border_radius 2
+
+##hide_edge_borders##
+#for_window [class="^.*"] border pixel 0
 
 # Set inner/outer gaps
 gaps inner 25
@@ -241,7 +247,7 @@ exec --no-startup-id nm-applet
 
 ################## change wallpaper ######################
 
-exec_always --no-startup-id feh --bg-fill /home/eloy/Downloads/wallpaper.jpg
+exec_always --no-startup-id feh --bg-fill /home/eloy/Downloads/moscow.jpg
 
 
 ################### keybindings to custom script initialization ###################
@@ -255,8 +261,8 @@ bindsym $mod+n exec /home/eloy/Downloads/sc/powermenu.sh
 bindsym $mod+m exec /home/eloy/Downloads/sc/network.sh 
 
 
+for_window [class=".*"] border pixel 1
 
-#######border color #########
 
 # class                   border  backgr. text    
   client.focused          #333333 #333333 #333333 
@@ -264,8 +270,29 @@ bindsym $mod+m exec /home/eloy/Downloads/sc/network.sh
   client.unfocused        #333333 #333333 #333333 
   client.urgent           #333333 #333333 #333333 
   client.placeholder      #333333 #333333 #333333  
+#default_border pixel 1
+######for mpv floating and sticky ##########
 
-for_window [class=".*"] border pixel 1
+for_window [class="^mpv"] floating enable resize set 360 240
+for_window [class="^mpv"] sticky enable
+for_window [class="^mpv"] border pixel 0
+no_focus [class="^mpv"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
