@@ -116,7 +116,7 @@ offset-y = 7px
 radius = 10
 fixed-center = true
 background = #0e1619
-foreground = #b3b3b3
+foreground = #ffd11a
 padding-left = 2
 padding-right = 0
 module-margin-left = 0
@@ -230,7 +230,7 @@ label-unfocused-font = 3
 
 ; urgent = Workspace with urgency hint set
 label-urgent = ""
-label-urgent-foreground = #c44dff
+label-urgent-foreground = #ffd11a
 label-urgent-font = 3
 label-urgent-padding = 1
 
@@ -239,7 +239,7 @@ label-urgent-padding = 1
 type = custom/script
 
 exec =  /home/eloy/Downloads/sc/date.sh
-interval = 6
+interval = 15
 tail = true
 label-foreground = #b3b3b3
 
@@ -247,10 +247,10 @@ label-foreground = #b3b3b3
 
 type = custom/script
 
-exec = echo " 󰐥"
+exec = echo " 󰤆"
 format-foreground =#ff3333
 click-left = /home/eloy/Downloads/sc/powermenu.sh &
-interval = 10.0
+interval = 600
 
 
 [module/volume]
@@ -278,7 +278,7 @@ format = <label>
 format-prefix = "󰍛 " 
 label = "%{T2}%percentage%%%{T2} "
 label-foreground =#000000
-format-foreground =#000000
+format-foreground =#004d99
 
 
 [module/memory]
@@ -289,7 +289,7 @@ interval = 6
 format-prefix = "󰮯 "
 label = "%{T2}%percentage_used%%%{T-} " 
 label-foreground =#000000
-format-foreground =#000000
+format-foreground =#b300b3
 
 
 [module/launcher]
@@ -297,12 +297,13 @@ format-foreground =#000000
 
 type = custom/text
 
-content = "%{T4} 󰛝 %{T-}"
+content = "%{T4} 󰊠 %{T-}"
 content-background = #FFFFFF
 content-foreground = #000000
 content-padding = 1
 content-font = 2
 click-left = rofi -show drun -eh 2 -bw 0 &
+interval = 600
 
 [module/battery]
 
@@ -350,7 +351,6 @@ format-foreground = #008060
 click-left = /home/eloy/Downloads/sc/network.sh &
 
 
-
 [module/prev]
 type = custom/script
 exec = echo "%{T5}󰒮 %{T-}" &
@@ -363,7 +363,7 @@ click-left = playerctl --player=spotify previous &
 
 [module/toggle]
 type = custom/script
-exec = [[ "$(playerctl -p spotify status 2>/dev/null)" == "Playing" ]] && echo "󰏦" || echo "󰐌"
+exec = [[ "$(playerctl -p spotify status 2>/dev/null)" == "Playing" ]] && echo "󰏦" || echo "󰐍"
 interval = 3
 format = "%{F#f2f2f2}<label>%{F-}"
 tail = true
@@ -385,7 +385,7 @@ exec = /home/eloy/Downloads/sc/song.sh 2>/dev/null || echo "No player found"
 format = "<label>  "
 format-prefix = "%{F#FFFFFF} 󰓇  %{F-}"
 format-background = #00000000 
-interval = 8
+interval = 9
 format-foreground = #FFFFFF
 
 tail = true
@@ -393,7 +393,7 @@ tail = true
 [module/wlan]
 type = internal/network
 interface = wlp2s0
-interval = 10.0
+interval = 12.0
 format-connected = <ramp-signal>
 label-connected = %essid%
 label-disconnected =  󰤭
@@ -404,6 +404,13 @@ ramp-signal-2 =  󰤢
 ramp-signal-3 =  󰤥
 ramp-signal-4 =  󰤨
 ramp-signal-foreground = #ffb399
+
+
+
+
+
+
+
 
 
 
