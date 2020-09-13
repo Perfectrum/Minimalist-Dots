@@ -1,14 +1,13 @@
-@import "/home/eloy/.config/rofi/colors.rasi"
 configuration {
-    modi: "combi,drun";
-    lines: 8;
+    modi: "drun,combi";
+ 
     columns: 1;
-    font: "System San Francisco 8.2";
+    font: "Fira Mono Medium 7.5";
     bw: 0;
     location: 7;
     yoffset:-40;
     xoffset: 40;
-    drun-display-format:            "{name}";
+    drun-display-format: " {name}";
     fixed-num-lines: true;
     show-icons: true;
     icon-theme:"papirus";
@@ -19,7 +18,7 @@ configuration {
     fullscreen: false;
     fake-transparency: false;
     scroll-method: 1;
-    window-format: "[{w}] ·· {c} ··   {t}";
+    window-format: "{w}.{c}·{t}";
     click-to-exit: true;
     show-match: false;
     color-normal: "@xbg, @xfg, @xbg, @xfg, @xbg";
@@ -32,7 +31,8 @@ configuration {
     display-run: "";
     display-ssh: "";
     display-drun: "";
-    display-combi: "";
+    display-combi: "󰤲";
+   
     kb-remove-word-back: "Control+BackSpace,Alt+d,Alt+BackSpace";
     kb-accept-entry: "Control+m,Return,Alt+m";
     kb-mode-next: "Shift+Right,Control+Tab,Alt+l,Alt+Tab";
@@ -41,6 +41,7 @@ configuration {
     kb-row-right: "Control+Page_Down,Control+Alt+l";
     kb-row-up: "Up,Control+p,ISO_Left_Tab,Alt+k";
     kb-row-down: "Down,Control+n,Alt+j";
+    kb-cancel:"d";
     kb-select-1: "1";
     kb-select-2: "2";
     kb-select-3: "3";
@@ -88,16 +89,17 @@ configuration {
 window {
     background-color: @xbg;
     border: 2;
-    border-color:#FFFFFF;
+    border-color:#ffffff;
     border-radius: 15px;
     padding: 5;
     width: 17%;
     height: 50%;
+  
 }
 mainbox {
     border: 0;
     border-color: @xfg;
-    padding: 13;
+    padding: 5px 0px 0px 0px;
     border-radius: 10px;
 }
 message {
@@ -115,16 +117,19 @@ listview {
     border-color: @x6;
     spacing: 3px;
     scrollbar: false;
-    padding: 10px 8px 0px ;
+    padding: 10px 8px 0px 8px  ;
+  
 }
 element {
     border: 0;
     padding: 1px;
+
 }
 
 element normal.normal {
     background-color: rgba (0,0,0,0%);
     text-color:       @x17;
+
 }
 element normal.urgent {
     background-color: rgba (0,0,0,0%);
@@ -174,26 +179,31 @@ button {
     margin: 4px;
     padding: 4px;
     background-color: @xbg;
-    text-color: @xfg;
+    text-color: #3d3d5c;
     border: 0px;
-    border-radius: 15px;
+    border-radius: 30px;
     border-color: @x8;
+  font: "Fira Mono 14.5";
 }
 button selected {
     background-color: @xbg;
-    text-color:       @x17;
-    border:       2px;
-    border-radius: 8px;
-    border-color:     @xfg;
+    text-color: #00663d;
+    border:       0px;
+    border-radius: 9px;
+    border-color: #000000;
+font: "Fira Mono 9.5";
 }
 inputbar {
     spacing:    0px ;
     text-color: @xfg;
-    padding:    2px 2px 2px 2px;
+    padding:    2px 2px 0px 10px;
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
     border-radius: 9px;
-    border: 2;
+    border: 0;
     border-color:     @xfg;
+
+
+
 }
 case-indicator {
     spacing:    0;
@@ -203,16 +213,16 @@ case-indicator {
 entry {
     spacing:    0;
     text-color: #000000;
-padding:    3px 3px 3px 3px;
+padding:    4px 0px 0px 0px;
 
 }
 prompt {
     spacing:    0;
     border:     3;
-    border-color:     @xbg;
-    text-color: #000000;
+    border-color: #00000000;
+    text-color: #ffffff;
      border-radius: 9px;
-
+    font: "Fira Mono 10.5";
 }
 textbox-prompt-colon {
     expand:     false;
@@ -222,5 +232,7 @@ textbox-prompt-colon {
 
 }
 
+
+@import "/home/eloy/.config/rofi/colors.rasi"
 
 
