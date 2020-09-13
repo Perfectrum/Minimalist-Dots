@@ -1,4 +1,4 @@
-### :balloon: Hi there!! Welcome!:balloon:
+### :cloud: Hi there!! Welcome!:cloud:
 Dotfiles For Customizing Linux :penguin:
 
 - **WM**                  : [i3](https://i3wm.org/) :balloon:
@@ -10,7 +10,7 @@ Dotfiles For Customizing Linux :penguin:
 - **GTK Theme**           : [Orchis](https://github.com/vinceliuice/Orchis-theme) 
 - **File Manager**        : [Thunar](https://wiki.archlinux.org/index.php/Thunar) 
 - **Music Player Client** : [Ncmpcpp](https://wiki.archlinux.org/index.php/Ncmpcpp)& Spotify 
-- **Fonts**               : [Material Design Icons](https://materialdesignicons.com/) , [FiraCode](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) , Breeze Sans
+- **Fonts**               : [Material Design Icons](https://materialdesignicons.com/) , [FiraCode](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) 
 
 ## Preview
 
