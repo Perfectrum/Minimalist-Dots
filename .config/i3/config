@@ -6,7 +6,7 @@ set $mod Mod1
 
 ###################set font###################
 
-font pango:Fira Code Light Nerd Font Complete 8
+font pango:Iosevka 8
 
 ###################start a terminal###################
 
@@ -42,10 +42,12 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+h split h ;; exec urxvt
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+v split v ;; exec urxvt
+
+bindsym $mod+m workspace back_and_forth
 
 # enter fullscreen mode for the focused container
 #bindsym $mod+f fullscreen toggle
@@ -56,7 +58,7 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+space floating toggle
+bindsym $mod+space floating toggle ;; move position center ;; resize set 600 400  ;; mode "moveit"
 
 # change focus between tiling / floating windows
 bindsym $mod+shift+space focus mode_toggle
@@ -105,7 +107,7 @@ mode "moveit" {
     bindsym Down move down 40px
     bindsym Right move right 40px
     bindsym Escape mode "default"
-    bindsym Return mode "default"
+    bindsym q mode "default"
 }
 
 #for_window [workspace="3"] floating enable move position mouse resize set 600 400 
@@ -117,15 +119,15 @@ mode "moveit" {
 ################### set workspaces ###################
 
 
-set $ws1 "1 "
-set $ws2 "2 "
-set $ws3 "3 "
-set $ws4 "4 "
-set $ws5 "5 "
-set $ws6 "6 "
-set $ws7 "7 "
-set $ws8 "8 "
-set $ws9 "9 "
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
 set $ws10 "10"
 
 ################### keybinding to workspace ###################
@@ -239,44 +241,67 @@ bindsym $mod+minus  gaps inner all minus 5
 
 ################### auto startup apps ###################
 
-exec_always --no-startup-id picom --experimental-backends 
-exec_always --no-startup-id dunst
-#exec_always --no-startup-id xfce4-power-manager
+exec_always --no-startup-id picom --experimental-backends &
+exec_always --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec_always --no-startup-id dunst &
+exec_always --no-startup-id xfce4-power-manager
 exec --no-startup-id nm-applet
 #exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 ################## change wallpaper ######################
 
-exec_always --no-startup-id feh --bg-fill /home/eloy/Downloads/moscow.jpg
+exec_always --no-startup-id feh --bg-fill /home/eloy/Downloads/gtry.jpg
 
 
 ################### keybindings to custom script initialization ###################
 
-## to start polybar ##
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+## to start polybar
+
+exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
 ############## to start rofi widgets ###############
 
-bindsym $mod+n exec /home/eloy/Downloads/sc/powermenu.sh 
-bindsym $mod+m exec /home/eloy/Downloads/sc/network.sh 
+bindsym $mod+c exec /home/eloy/Downloads/sc/powermenu.sh 
 
+##############Border Color for active and inactive##########
 
 for_window [class=".*"] border pixel 1
 
 
 # class                   border  backgr. text    
-  client.focused          #333333 #333333 #333333 
-  client.focused_inactive #333333 #333333 #333333 
-  client.unfocused        #333333 #333333 #333333 
-  client.urgent           #333333 #333333 #333333 
-  client.placeholder      #333333 #333333 #333333  
+  client.focused          #e6e6e6 #e6e6e6 #e6e6e6
+  client.focused_inactive #e6e6e6 #e6e6e6 #e6e6e6
+  client.unfocused        #e6e6e6 #e6e6e6 #e6e6e6
+  client.urgent           #f2f2f2 #f2f2f2 #f2f2f2
+ 
 #default_border pixel 1
-######for mpv floating and sticky ##########
+######mpv##########
 
-for_window [class="^mpv"] floating enable resize set 360 240
+for_window [class="^mpv"] floating enable  resize set 360 240 
 for_window [class="^mpv"] sticky enable
 for_window [class="^mpv"] border pixel 0
 no_focus [class="^mpv"]
+
+
+##Brightness control keybinding
+
+bindsym $mod+b	exec --no-startup-id xbacklight -dec 4
+bindsym $mod+g	exec --no-startup-id xbacklight -inc 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
