@@ -2,11 +2,11 @@ configuration {
     modi: "drun,combi";
  
     columns: 1;
-    font: "Fira Mono Medium 7.5";
+    font: "Iosevka Bold 8.5";
     bw: 0;
-    location: 7;
-    yoffset:-40;
-    xoffset: 40;
+    location: 1;
+    yoffset:40;
+    xoffset: 30;
     drun-display-format: " {name}";
     fixed-num-lines: true;
     show-icons: true;
@@ -90,10 +90,10 @@ window {
     background-color: @xbg;
     border: 2;
     border-color:#ffffff;
-    border-radius: 15px;
+    border-radius: 12px;
     padding: 5;
-    width: 17%;
-    height: 50%;
+    width: 15%;
+    height: 42%;
   
 }
 mainbox {
@@ -121,9 +121,10 @@ listview {
   
 }
 element {
-    border: 0;
-    padding: 1px;
-
+    border: 0px;
+    padding: 4px 0px 0px 10px ;
+    border-radius: 12px;
+   border-color: #3d3d5c; 
 }
 
 element normal.normal {
@@ -140,7 +141,7 @@ element normal.active {
     text-color:       @x17;
 }
 element selected.normal {
-    background-color: rgba (0,0,0,0%);
+    background-color:  #40bf8040;
     text-color:       @x19;
 }
 element selected.urgent {
@@ -179,7 +180,7 @@ button {
     margin: 4px;
     padding: 4px;
     background-color: @xbg;
-    text-color: #3d3d5c;
+    text-color: #333333;
     border: 0px;
     border-radius: 30px;
     border-color: @x8;
@@ -187,7 +188,7 @@ button {
 }
 button selected {
     background-color: @xbg;
-    text-color: #00663d;
+    text-color: #4d1933;
     border:       0px;
     border-radius: 9px;
     border-color: #000000;
@@ -212,7 +213,7 @@ case-indicator {
 }
 entry {
     spacing:    0;
-    text-color: #000000;
+    text-color: #ffffff;
 padding:    4px 0px 0px 0px;
 
 }
@@ -222,7 +223,7 @@ prompt {
     border-color: #00000000;
     text-color: #ffffff;
      border-radius: 9px;
-    font: "Fira Mono 10.5";
+    font: "Fira Mono 11";
 }
 textbox-prompt-colon {
     expand:     false;
