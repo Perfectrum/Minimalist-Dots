@@ -281,6 +281,7 @@ for_window [class="^mpv"] floating enable  resize set 360 240
 for_window [class="^mpv"] sticky enable
 for_window [class="^mpv"] border pixel 0
 no_focus [class="^mpv"]
+for_window [class="^Spotify"] border pixel 0
 
 
 ##Brightness control keybinding
