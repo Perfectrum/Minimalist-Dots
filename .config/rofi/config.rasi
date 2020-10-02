@@ -117,13 +117,13 @@ listview {
     border-color: @x6;
     spacing: 3px;
     scrollbar: false;
-    padding: 10px 8px 0px 8px  ;
+    padding: 2px 8px 0px 8px  ;
   
 }
 element {
     border: 0px;
-    padding: 4px 0px 0px 10px ;
-    border-radius: 12px;
+    padding: 7px 0px 0px 5px ;
+    border-radius: 10px;
    border-color: #3d3d5c; 
 }
 
