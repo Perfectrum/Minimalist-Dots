@@ -14,5 +14,8 @@ MONITOR=eDP0 polybar -c ~/.config/polybar/config songs &
 MONITOR=eDP0 polybar -c ~/.config/polybar/config player &
 MONITOR=eDP0 polybar -c ~/.config/polybar/config left &
 MONITOR=eDP0 polybar -c ~/.config/polybar/config center &
-MONITOR=eDP0 polybar -c ~/.config/polybar/config right &
 MONITOR=eDP0 polybar -c ~/.config/polybar/config power &
+
+sleep 3
+
+MONITOR=eDP0 polybar -c ~/.config/polybar/config mask &
