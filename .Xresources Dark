@@ -1,5 +1,7 @@
 
 
+
+
 Xft.dpi: 96
 Xft.antialias: true
 Xft.hinting: true
@@ -13,43 +15,50 @@ xscreensaver.fade:   false
 xscreensaver.unfade: false
 ! ===== urxvt =====
 URxvt.scrollBar: off
-!URxvt.font: xft:SourceCodePro-Regular:size=9.5:minspace=False
-URxvt.font: xft:Fira Code Nerd Font:size=7.4:minspace=False,\
-           xft:Symbola:size=11
-URxvt.letterSpace:-1
-URxvt.internalBorder:    22
+URxvt.font:  xft:Iosevka:style=Bold:size=8.5:minspace=False,\xft:Symbola:size=11,\xft:Fira Code Nerd Font:size=8:minspace=False,\xft:mplus nerd font mono:size=10,
+URxvt.letterSpace:0
+URxvt.internalBorder:    14
 URxvt.imLocale: en_US.UTF-8
 URxvt.termName: xterm-256color
 URxvt.iso14755: false
 URxvt.iso14755_52: false
-URxvt.perl-ext-common:resize-font
+URxvt.perl-ext-common:default,resize-font
 URxvt.keysym.C-o:resize-font:smaller
 URxvt.keysym.C-p:resize-font:bigger
 URxvt.keysym.C-i:resize-font:reset
+urxvt*depth:32
+URxvt.cursorUnderline: true
+URxvt.scrollBar_right: true
 
 
 
 ! =======color scheme==========
 
-*background:	#0e1619
-*foreground:	#c8c8c8
-*cursorColor:	#FFFFFF
-*color0:	#292b34
-*color1:	#ea737a
-*color2:	#00ffcc
-*color3:	#d9853c
-*color4:	#6687a6
-*color5:    #00cca3
-*color6:	#89d9f9
-*color7:	#c8c8c8
-*color8:	#585e74
-*color9:	#ea737a
-*color10:	#00ffcc
-*color11:	#d9853c
-*color12:	#6687a6
-*color13:   #00cca3
-*color14:	#89d9f9
-*color15:	#c8c8c8
+*background:	[94]#0e1619
+*foreground:     #81a1c1
+*cursorColor:	#b48ead
+*color0:	#88c0d0
+*color1:	#bf616a
+*color2:       #c6538c
+*color3:	#1f7a7a
+*color4:	  #d08770
+*color5:        #b48ead
+*color6:        #7575a3
+*color7:	#5e81ac
+*color8:	#88c0d0
+*color9:	#bf616a
+*color10:	#c6538c
+*color11:	#1f7a7a
+*color12:	  #d08770
+*color13:       #b48ead
+*color14:	#7575a3
+*color15:	#5e81ac
+
+
+
+
+
+
 
 
 
