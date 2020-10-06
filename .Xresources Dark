@@ -1,7 +1,6 @@
 
 
 
-
 Xft.dpi: 96
 Xft.antialias: true
 Xft.hinting: true
@@ -15,7 +14,7 @@ xscreensaver.fade:   false
 xscreensaver.unfade: false
 ! ===== urxvt =====
 URxvt.scrollBar: off
-URxvt.font:  xft:Iosevka:style=Bold:size=8.5:minspace=False,\xft:Symbola:size=11,\xft:Fira Code Nerd Font:size=8:minspace=False,\xft:mplus nerd font mono:size=10,
+URxvt.font:  xft:Iosevka:style=Bold:size=8.8:minspace=False,\xft:Symbola:size=11,\xft:CozetteVector:size=9:minspace=False,\xft:mplus nerd font mono:size=10,
 URxvt.letterSpace:0
 URxvt.internalBorder:    14
 URxvt.imLocale: en_US.UTF-8
@@ -34,25 +33,34 @@ URxvt.scrollBar_right: true
 
 ! =======color scheme==========
 
-*background:	[94]#0e1619
-*foreground:      #81a1c1
-*cursorColor:	    #b48ead
-*color0:	#88c0d0
-*color1:	#bf616a
-*color2:  #c6538c
-*color3:	#1f7a7a
-*color4:  #d08770
-*color5:  #5e81ac 
-*color6:  #7575a3
-*color7:	#b48ead
-*color8:	#88c0d0
-*color9:	#bf616a
-*color10:	#c6538c
-*color11:	#1f7a7a
-*color12:	#d08770
-*color13: #5e81ac 
-*color14:	#7575a3
-*color15:	#b48ead
+*background:	[99]#0e1619
+*foreground:     #8c8c8c
+*cursorColor:	#b48ead
+*color0:	#8c8c8c
+*color1:	#c65353
+*color2:       #bf616a
+*color3:	#77773c
+*color4:	 #009973
+*color5:        #008080
+*color6:        #47476b
+*color7:	#4d4d4d
+*color8:	#8c8c8c
+*color9:	#c65353
+*color10:       #bf616a
+*color11:	#77773c
+*color12:	 #009973
+*color13:       #008080
+*color14:	#47476b
+*color15:	#4d4d4d
+
+
+
+
+
+
+
+
+
 
 
 
