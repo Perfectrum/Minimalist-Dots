@@ -1,6 +1,8 @@
 
 
 
+
+
 Xft.dpi: 96
 Xft.antialias: true
 Xft.hinting: true
@@ -40,7 +42,7 @@ URxvt.scrollBar_right: true
 *color1:	#c65353
 *color2:       #bf616a
 *color3:	#77773c
-*color4:	 #009973
+*color4:	 #75a3a3
 *color5:        #008080
 *color6:        #47476b
 *color7:	#4d4d4d
@@ -48,10 +50,16 @@ URxvt.scrollBar_right: true
 *color9:	#c65353
 *color10:       #bf616a
 *color11:	#77773c
-*color12:	 #009973
+*color12:	 #75a3a3
 *color13:       #008080
 *color14:	#47476b
 *color15:	#4d4d4d
+
+
+
+
+
+
 
 
 
