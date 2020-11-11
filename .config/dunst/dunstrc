@@ -3,12 +3,12 @@ title = Dunst
 class = Dunst
 monitor = 0
 follow = keyboard
-geometry = "350x8-76+76"
+geometry = "0x0-98+76"
 indicate_hidden = yes
 shrink = yes
 line_height = 0
 startup_notification = true
-
+corner_radius = 22,
 
 separator_height = 0
 padding = 5
@@ -17,11 +17,11 @@ horizontal_padding = 20
 frame_width = 0
 frame_color = "#3d3d5c"
 separator_color = "#e5f5f5"
-font = mplus nerd font 9
+font = mplus nerd font 12
 markup = full
-format = "<span size='x-large' font_desc='mplus nerd font 7' weight='bold' foreground='#ffa366'>%s</span>\n%b"
+format = "<span size='x-large' font_desc='mplus nerd font 10' weight='bold' foreground='#00b38f'>%s</span>\n%b"
 alignment = center
-vertical_alignment = top
+vertical_alignment = center
 idle_threshold = 120
 show_age_threshold = 60
 sort = no
@@ -34,12 +34,12 @@ sticky_history = no
 history_length = 20
 always_run_script = false
 verbosity = mesg
-transparency = 40
+transparency = 10
 
-icon_position = right
+icon_position = left
 min_icon_size = 0
-max_icon_size = 40
-icon_path = /usr/share/icons/Papirus-Light/48x48/actions:/usr/share/icons/Papirus-Light/48x48/apps:/usr/share/icons/Papirus-Light/48x48/devices:/usr/share/icons/Papirus-Light/48x48/emblems:/usr/share/icons/Papirus-Light/48x48/emotes:/usr/share/icons/Papirus-Light/48x48/mimetypes:/usr/share/icons/Papirus-Light/48x48/places:/usr/share/icons/Papirus-Light/48x48/status
+max_icon_size = 80
+icon_path = /usr/share/icons/Papirus-Light/48x48/actions:/home/darkhorze/.icons/Reversal-grey/apps/scalable/:/usr/share/icons/Papirus-Light/48x48/devices:/usr/share/icons/Papirus-Light/48x48/emblems:/usr/share/icons/Papirus-Light/48x48/emotes:/usr/share/icons/Papirus-Light/48x48/mimetypes:/usr/share/icons/Papirus-Light/48x48/places:/usr/share/icons/Papirus-Light/48x48/status
 
 
 browser = /usr/bin/firefox -new-tab
@@ -55,22 +55,49 @@ context = ctrl+shift+period
 
 [urgency_low]
 timeout = 3
-background = "#3d3d5c"
-foreground = "#a6a6a6"
+background = "#0e1619"
+foreground = "#dfdfdf"
 
 [urgency_normal]
 timeout = 6
-background = "#3d3d5c"
-foreground = "#a6a6a6"
+background = "#0e1619"
+foreground = "#dfdfdf"
 
 [urgency_critical]
 timeout = 0
-background = "#3d3d5c"
-foreground = "#ff3333"
+background = "#0e1619"
+foreground = "#bf616a"
 
 [scrot]
-    appname = scrot
-    format = "<span size="x-large">📷<b>  %s </b></span>\n<i>%b</i>"
+appname = scrot
+format = "<span size="x-large">📷<b>  %s </b></span>\n<i>%b</i>"
+
+[pacman-S]
+summary = Pacman
+body = *installed*
+format = "<span size="x-large">󰏗<b> %s </b></span>\n%b"
+background = "#243577"
+
+[pacman-Rs]
+summary = Pacman
+body = *removed*
+format = "<span size="x-large">󰆴<b> %s </b></span>\n%b"
+background = "#c8144c"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
