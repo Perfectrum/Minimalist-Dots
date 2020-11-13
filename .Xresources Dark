@@ -14,7 +14,7 @@ xscreensaver.fade:   false
 xscreensaver.unfade: false
 ! ===== urxvt =====
 URxvt.scrollBar: off
-URxvt.font:  xft:Iosevka:style=Extralight:size=12,\xft:mplus nerd font mono:size=13,\xft:Symbola:size=14,    
+URxvt.font:  xft:Iosevka:style=Extralight:size=14,\xft:mplus nerd font mono:size=13,\xft:Symbola:size=14,    
 
 URxvt.internalBorder:    17
 URxvt.imLocale: en_US.UTF-8
@@ -25,7 +25,7 @@ URxvt.perl-ext-common:default,resize-font
 URxvt.keysym.C-o:resize-font:smaller
 URxvt.keysym.C-p:resize-font:bigger
 URxvt.keysym.C-i:resize-font:reset
-urxvt*depth:24
+urxvt*depth:32
 URxvt.cursorUnderline: true
 URxvt.scrollBar_right: false
 URxvt.letterSpace: 1
@@ -34,25 +34,25 @@ URxvt.letterSpace: 1
 
 ! =======color scheme==========
 
-*background:	      #1b1e25
-*foreground:        #bfbfbf
-*cursorColor:     	#b48ead
-*color0:	          #808080
-*color1:	          #80d4ff
-*color2:            #ffff99
-*color3:	          #659598
-*color4:	          #9494b8
-*color5:            #4080bf
-*color6:            #d28598
-*color7:	          #ffffe6
-*color8:	          #808080
-*color9:	          #80d4ff
-*color10:           #ffff99
-*color11:	          #659598
-*color12:	          #9494b8
-*color13:           #4080bf
-*color14:	         #d28598
-*color15:         	#ffffe6
+*background:	#0b1619
+*foreground:    #bfbfbf
+*cursorColor:	#b48ead
+*color0:	#a6a6a6
+*color1:	#80d4ff
+*color2:         #ffff99
+*color3:	 #21a878
+*color4:	 #f3b5c2
+*color5:         #67b4ec
+*color6:         #d28598
+*color7:	#ffffe6
+*color8:	#a6a6a6
+*color9:	#80d4ff
+*color10:         #ffff99
+*color11:	 #21a878
+*color12:	 #f3b5c2
+*color13:        #67b4ec
+*color14:	  #d28598
+*color15:	#ffffe6
 
 
 
