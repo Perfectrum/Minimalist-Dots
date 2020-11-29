@@ -4,9 +4,9 @@ Dotfiles For Customizing i3 WM
 
 ## Preview
 
-![Screenshot1](https://github.com/Eloysheyin/Minimalist-Dots/blob/master/qweqw.png)
+![Screenshot1](https://github.com/Eloysheyin/Minimalist-Dots/blob/master/newshot2020.png)
 
-![Screenshot2](https://github.com/Eloysheyin/Minimalist-Dots/blob/master/shot1.png)
+
 
 
 
