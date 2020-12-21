@@ -1,6 +1,5 @@
 configuration {
     modi: "drun,combi";
- 
     columns: 1;
     font: "Hack 10";
     bw: 0;
@@ -10,7 +9,6 @@ configuration {
     drun-display-format: " {name}";
     fixed-num-lines: true;
     show-icons: true;
-    icon-theme:"papirus";
     sidebar-mode: true;
     combi-modi: "window";
     separator-style: "none";
@@ -23,12 +21,12 @@ configuration {
     show-match: false;
    
     combi-hide-mode-prefix: false;
-    display-window: "";
+    display-window: "";
     display-windowcd: "";
     display-run: "";
     display-ssh: "";
     display-drun: "󰛡";
-    display-combi: "󰹫";
+    display-combi: "󱇙";
    
     kb-remove-word-back: "Control+BackSpace,Alt+d,Alt+BackSpace";
     kb-accept-entry: "Control+m,Return,Alt+m";
@@ -54,48 +52,49 @@ configuration {
     me-accept-custom: "MouseMiddle";
 }
 * {
-  background-color: #1b1e25 ; 
+  background-color:  #141720  ; 
 }
 window {
-    background-color: #1b1e25 ;
-    border: 0;
-    border-color:#1b1e25 ;
-    border-radius: 25px  30px 20px 20px;
-    padding: 0px 10px 4px 10px;
-    width: 15%;
-    height: 27%;
+    background-color:#141720 ;
+    border-radius: 12px  12px 17px 17px;
+    padding: 10px 15px 0px 5px;
+    width: 18.7%;
+    height: 39%;
  anchor: north;
   location:north;
-  x-offset: -37.76%;
-  y-offset: 1%;  
-
+  x-offset: -39.6%;
+  y-offset: 5%;  
+  border: 4px 4px 12px 4px;
+  border-color:#000000   ;
 
 
 
 }
 mainbox {
     border: 0;
-    border-color: #1b1e25 ;
+    border-color:  #141720  ;
     padding: 3px 0px 2px 0px;
     border-radius: 15px;
 }
 
 listview {
     fixed-height: 0;
-    border: 10px 0px 0px 0px;
-    border-color:#1b1e25 ;
+    border: 15px 0px 0px 10px;
+    border-color: #141720  ;
     spacing: 3px;
     scrollbar: false;
-    padding: 15px 15px 15px 10px  ;
- background-color:  #273244; 
+    padding: 8px 35px 9px 20px  ;
+ background-color: #141720   ; 
   border-radius: 30px 50px 30px 50px;
 
 }
 element {
     border: 0px;
-    padding: 9px 0px 0px 5px ;
+    padding: 12px 0px 0px 5px ;
     border-radius: 13px;
    border-color: #3d3d5c; 
+   font: " BAD GRUNGE Regular 20";
+
 }
 
 element normal.normal {
@@ -112,9 +111,11 @@ element normal.active {
     text-color:       @x17;
 }
 element selected.normal {
-    background-color:  #1f2738;
+    background-color:  #141720 ;
     text-color:       @x19;
- 
+    border: 0px 3px 3px 0px;
+    border-radius: 9px 9px 9px 9px;
+    border-color: #141720  ; 
 }
 element selected.urgent {
     background-color: rgba (0,0,0,0%);
@@ -142,23 +143,23 @@ button {
     margin: 6px 62px 10px 40px;
     padding: 0px;
     background-color: @xbg;
-    text-color:  #00b3b3;
+    text-color: #29293d;
     border: 2px;
     border-radius: 13px;
-    border-color: #0e1619;
+    border-color:  #141720 ;
    font: "Hack 16";   
-   background-color: #0e1619;
+   background-color: #141720 ;
 
 }
 button selected {
     
     margin: 0px 62px 7px 53px;
-    text-color:   #ffff99;
+    text-color:#476b6b ;
     border:       2px;
     border-radius: 13px;
-    border-color:  #0e1619;
+    border-color:   #141720 ;
     font: "Hack 16";
-    background-color: #0e1619;
+    background-color: #141720 ;
 
 }
 inputbar {
@@ -166,9 +167,9 @@ inputbar {
     text-color: @xfg;
     padding:    0px 0px 0px 13px;
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
-    border-radius: 9px;
+    border-radius: 7px;
     border: 0px 40px 0px 0px;
-    border-color: #1b1e25;
+    border-color:  #1f2430;
 
 
 
@@ -176,22 +177,21 @@ inputbar {
 
 entry {
     spacing:    0;
-    text-color:  #ffffff;
+    text-color:  #000000;
 padding:    3px 0px 0px 0px;
-background-color:  #d48398;
+background-color:  #476b6b;
 border:     2;
-border-color: #dfdfdf;
-border-radius: 8px;
+border-color:   #476b6b ;
+border-radius: 7px;
 }
 prompt {
     spacing:    0;
     border:     1;
-    border-color: #00000000;
-    text-color: #0e1619;
-    
+    border-color: #2d8659;
+    text-color:  #476b6b;
     font: "Hack 16";
     padding:    1.5px 1.5px 1.5px 1.5px;
-    background-color:  #d48398;
+    background-color:#1f2430;
  border-radius: 20px;
 }
 textbox-prompt-colon {
@@ -203,5 +203,5 @@ textbox-prompt-colon {
 }
 
 
-@import "/home/darkhorze/.config/rofi/colors.rasi"
+@import "/home/gzr/.config/rofi/colors.rasi"
 
