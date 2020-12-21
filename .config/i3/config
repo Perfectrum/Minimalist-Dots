@@ -1,12 +1,11 @@
 
-
 ###################set mod key###################
 
 set $mod Mod1
 
 ###################set font###################
 
-font pango:Iosevka 10
+font pango:Noto Mono Regular 13
 
 ###################start a terminal###################
 
@@ -18,10 +17,10 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+q kill
 
 # change focus of window
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -30,10 +29,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -42,10 +41,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h ;; exec urxvt
+bindsym $mod+n split h 
 
 # split in vertical orientation
-bindsym $mod+v split v ;; exec urxvt
+bindsym $mod+v split v 
 
 bindsym $mod+m workspace back_and_forth
 
@@ -53,15 +52,15 @@ bindsym $mod+m workspace back_and_forth
 #bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+Shift+t layout stacking
+bindsym $mod+s layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+space floating toggle ;; move position center ;; resize set 600 400 
+bindsym $mod+space floating toggle ;; move position center ;; resize set 600 400  ;; mode "moveit"
 
 # change focus between tiling / floating windows
-bindsym $mod+shift+space focus mode_toggle
+bindsym $mod+w focus mode_toggle
 
 # focus the parent container
 #bindsym $mod+a focus parent
@@ -76,40 +75,36 @@ bindsym $mod+x mode "resize"
 
 ## resize bindings ##
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym l resize shrink width 5 px or 5 ppt
-        bindsym k resize grow height 5 px or 5 ppt
-        bindsym j resize shrink height 5 px or 5 ppt
-        bindsym h resize grow width 5 px or 5 ppt
+ 
+        bindsym h resize shrink width 5 px or 5 ppt
+        bindsym j resize grow height 5 px or 5 ppt
+        bindsym k resize shrink height 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
-
-        # back to normal: Enter or Escape
-        bindsym z mode "default"
+        bindsym n resize shrink width 20 px or 20 ppt ;; resize shrink height 25 px or 25 ppt
+        bindsym Down resize grow height 20 px or 20 ppt
+        bindsym Up resize shrink height 20 px or 20 ppt
+        bindsym m resize grow width 25 px or 25 ppt ;; resize grow height 20 px or 20 ppt
+        bindsym Left resize shrink width 20 px or 20 ppt
+        bindsym Right resize grow width 20 px or 20 ppt 
         bindsym Escape mode "default"
+        
+      
 }
 
 ################### moving floating windows ###################
 
 bindsym $mod+a focus floating; mode "moveit"
 mode "moveit" {
-    bindsym Up move up 25px
-    bindsym Left move left 25px
-    bindsym Down move down 25px
-    bindsym Right move right 25px
+    bindsym Up move up 35px
+    bindsym Left move left 35px
+    bindsym Down move down 35px
+    bindsym Right move right 35px
     bindsym Escape mode "default"
-    bindsym z mode "default"
+   
 
- bindsym k move up  5px
+ bindsym k move up  5px 
  bindsym h move left 5px
  bindsym j move down 5px
  bindsym l move right 5px
@@ -119,7 +114,7 @@ mode "moveit" {
 
 #for_window [workspace="3"] floating enable move position mouse resize set 600 400 
 #for_window [workspace="8"] floating enable move position mouse resize set 520 200 [class="^URxvt$"] 
-for_window [workspace="5"] [class="^URxvt$"] floating enable ;; move position mouse ;; [class="^URxvt$"] resize set 700 350 
+#for_window [workspace="5"] [class="^URxvt$"] floating enable ;; move position mouse ;; [class="^URxvt$"] resize set 700 350 
 
 
 
@@ -199,10 +194,12 @@ bindsym $mod+Shift+F4 exec --no-startup-id scrot -u -e 'feh $f -x' & notify-send
 
 ################### assign specific apps to keybindings ###################
 
-bindsym $mod+d exec rofi -show drun -eh 2 -bw 0 
+bindsym $mod+d exec --no-startup-id rofi -show drun -eh 2 
 bindsym $mod+f exec firefox
 bindsym $mod+t exec thunar
 bindsym $mod+Shift+m exec vscodium
+bindsym $mod+Shift+g exec gsimplecal
+bindsym $mod+Shift+x exec xfce4-clipman-history
 
 
 ################### assign apps to workspace ###################
@@ -222,8 +219,10 @@ bindsym $mod+Shift+m exec vscodium
 #for_window [class="^.*"] border pixel 0
 
 # Set inner/outer gaps
-gaps inner 15
-gaps outer 35
+gaps inner 10
+gaps outer 9
+gaps bottom 0
+gaps top 42
 #workspace $ws8 gaps inner 0
 #workspace $ws8 gaps outer 0
 
@@ -248,26 +247,30 @@ bindsym $mod+minus  gaps inner all minus 5
 
 ################### auto startup apps ###################
 
-exec_always --no-startup-id picom  &
-exec_always --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec_always --no-startup-id dunst &
-#exec_always --no-startup-id xfce4-power-manager
-exec --no-startup-id nm-applet
+exec_always --no-startup-id picom 
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 
+exec --no-startup-id dunst 
+exec --no-startup-id xfce4-power-manager 
+exec_always --no-startup-id nm-applet 
+#exec_always --no-startup-id blueman-tray &
+#exec_always --no-startup-id pulseaudio &
 #exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec_always --no-startup-id autotiling
+exec --no-startup-id volumeicon
+exec --no-startup-id xfce4-clipman
 
 ################## change wallpaper ######################
 
-exec_always --no-startup-id feh --bg-fill /home/darkhorze/.config/wall2020.jpg
-
-################### keybindin gs to custom script initialization ###################
+exec_always --no-startup-id feh --bg-fill /home/gzr/Downloads/beautiful-morning-minimal-4k-if-1920x1080.jpg
+################# keybindin gs to custom script initialization ###################
 
 ## to start polybar
 
-exec_always --no-startup-id ~/.config/polybar/launch.sh &
+exec_always --no-startup-id /home/gzr/.config/polybar/launch.sh &
 
 ############## to start rofi widgets ###############
 
-bindsym $mod+c exec  /home/darkhorze/.config/polybar/scripts/powermenu.sh 
+bindsym $mod+c exec  /home/gzr/.config/polybar/scripts/powermenu.sh &
 
 
 
@@ -275,29 +278,44 @@ for_window [class=".*"] border pixel 1
 
 
 # class                   border  backgr. text    
-client.focused          #a3a3c2 #a3a3c2 #a3a3c2
-client.focused_inactive #1b1e25 #1b1e25 #1b1e25
-client.unfocused        #1b1e25 #1b1e25 #1b1e25
-client.urgent           #f2f2f2 #f2f2f2 #f2f2f2
+client.focused         #a6a6a6 #a6a6a6 #a6a6a6
+client.focused_inactive #171c2b #171c2b #171c2b
+client.unfocused        #171c2b #171c2b #171c2b
+#client.urgent           #f2f2f2 #f2f2f2 #f2f2f2
  
 #default_border pixel 1
 ######mpv##########
 
 for_window [class="^mpv"] floating enable  resize set 480 360
 for_window [class="^mpv"] sticky enable
-for_window [class="^mpv"] border pixel 0
+#for_window [class="^mpv"] border pixel 0
 no_focus [class="^mpv"]
 for_window [class="^Spotify"] border pixel 0
 for_window [class="^firefox"] border pixel 0
 #for_window [class="^Thunar"] border pixel 0
 #for_window [class="^Mousepad"] border pixel 0
-#for_window [class="^Gsimplecal"] border pixel 0
+for_window [class="^Gsimplecal"] border pixel 0
 for_window [class="^feh"] border pixel 0
 
 
 
-bindsym $mod+b	exec --no-startup-id xbacklight -dec 4        
-bindsym $mod+g	exec --no-startup-id xbacklight -inc 5 
+bindsym $mod+b	exec --no-startup-id xbacklight -dec 4 && notify-send -i /home/gzr/.icons/Reversal-blue/apps/scalable/gcompris-edit.svg " 󰃝 " "$(light -G)%" &       
+bindsym $mod+g	exec --no-startup-id xbacklight -inc 5 && notify-send -i /home/gzr/.icons/Reversal-blue/apps/scalable/gcompris-edit.svg " 󰃞 " "$(light -G)%" &
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
