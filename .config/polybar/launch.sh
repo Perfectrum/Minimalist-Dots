@@ -9,13 +9,12 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 ## Launch
-MONITOR=eDP1 polybar -c ~/.config/polybar/config launcher &
-#MONITOR=eDP1 polybar -c ~/.config/polybar/config songs &
-#MONITOR=eDP1 polybar -c ~/.config/polybar/config player &
-MONITOR=eDP1 polybar -c ~/.config/polybar/config right &
-MONITOR=eDP1 polybar -c ~/.config/polybar/config center &
-MONITOR=eDP1 polybar -c ~/.config/polybar/config power &
 
+MONITOR=eDP1 polybar -c ~/.config/polybar/config center & 
+MONITOR=eDP1 polybar -c ~/.config/polybar/config datee & 
+MONITOR=eDP1 polybar -c ~/.config/polybar/config quicks &
 sleep 3
+MONITOR=eDP1 polybar -c ~/.config/polybar/config masked &
+MONITOR=eDP1 polybar -c ~/.config/polybar/config launcher & 
 
-MONITOR=eDP1 polybar -c ~/.config/polybar/config mask &
+
