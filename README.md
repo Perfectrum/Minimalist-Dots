@@ -1,10 +1,25 @@
 ### :cloud: Hi there!! Welcome!:cloud:
-Dotfiles For Customizing i3 WM
+**Dotfiles** For Customizing **i3** **WM**
 
 
 ## Preview
 
-![Screenshot1](https://github.com/Eloysheyin/Minimalist-Dots/blob/master/newshot2020.png)
+![Screenshot1](https://github.com/Eloysheyin/Minimalist-Dots/blob/master/scrot2020dec.png)
+
+
+## Details
+
+-WM: I3-gaps
+-StatusBar: Polybar
+-AppLauncher: Rofi[ver:1.5.4]
+-Notification: Dunst
+-Compositor: [Picom](https://github.com/ibhagwan/picom)
+-FM: Ranger,Thunar
+-WB: Firefox With [minimal-functional-fox-Theme](https://github.com/mut-ex/minimal-functional-fox) & [StartPage](https://github.com/sadparadiseinhell/tea-green)
+-Fonts: Iosevka,Hack,[Material-Designs-Icons](https://github.com/Templarian/MaterialDesign-Font),[BADGRUNGE](https://www.dafont.com/bad-grunge.font),[Nasalization](https://www.dafont.com/nasalization.font)
+-Fetch: [Fet.sh](https://github.com/6gk/fet.sh)
+-OtherApps: CAVA,Htop
+-MusicPlayer: Spotify
 
 
 
