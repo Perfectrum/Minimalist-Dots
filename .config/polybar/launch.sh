@@ -13,8 +13,6 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 MONITOR=eDP1 polybar -c ~/.config/polybar/config center & 
 MONITOR=eDP1 polybar -c ~/.config/polybar/config datee & 
 MONITOR=eDP1 polybar -c ~/.config/polybar/config quicks &
-sleep 3
-MONITOR=eDP1 polybar -c ~/.config/polybar/config masked &
 MONITOR=eDP1 polybar -c ~/.config/polybar/config launcher & 
 
 
