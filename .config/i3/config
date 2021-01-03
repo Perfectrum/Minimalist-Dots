@@ -198,7 +198,7 @@ bindsym $mod+Shift+F4 exec --no-startup-id scrot -u -e 'feh $f -x' & notify-send
 ################### assign specific apps to keybindings ###################
 
 bindsym $mod+d exec --no-startup-id rofi -theme  ~/.config/rofi/rofiapps/launcher/applauncher.rasi  -show drun -eh 2
-bindsym $mod+p exec --no-startup-id  rofi  -theme ~/.config/rofi/rofiapps/rofiwindowswitcher/altta.rasi  -show window
+bindsym $mod+p exec --no-startup-id  rofi  -theme ~/.config/rofi/rofiapps/rofiwindowswitcher/switcher.rasi  -show window
 bindsym $mod+f exec firefox
 bindsym $mod+t exec thunar
 bindsym $mod+Shift+m exec vscodium
@@ -256,9 +256,6 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id dunst 
 exec --no-startup-id xfce4-power-manager 
 exec_always --no-startup-id nm-applet 
-#exec_always --no-startup-id blueman-tray &
-#exec_always --no-startup-id pulseaudio &
-#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec_always --no-startup-id autotiling
 exec --no-startup-id volumeicon
 exec --no-startup-id xfce4-clipman 
@@ -282,10 +279,10 @@ for_window [class=".*"] border pixel 1
 
 
 # class                   border  backgr. text    
-client.focused     #737373 #737373 #262626
+client.focused          #737373 #737373 #262626
 client.focused_inactive #171c2b #171c2b #666666
 client.unfocused        #171c2b #171c2b #666666
-#client.urgent           #f2f2f2 #f2f2f2 #f2f2f2
+#client.urgent          #f2f2f2 #f2f2f2 #f2f2f2
  
 #default_border pixel 1
 ######mpv##########
@@ -296,8 +293,6 @@ for_window [class="^mpv"] sticky enable
 no_focus [class="^mpv"]
 for_window [class="^Spotify"] border pixel 0
 for_window [class="^firefox"] border pixel 0
-#for_window [class="^Thunar"] border pixel 0
-#for_window [class="^Mousepad"] border pixel 0
 for_window [class="^Gsimplecal"] border pixel 0
 for_window [class="^feh"] border pixel 0
 
