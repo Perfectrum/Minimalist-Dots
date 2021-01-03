@@ -1,7 +1,9 @@
 #!/bin/env bash
 
-date=$(date '+%a %e %b %k:%M')
+date=$(date '+%a %e')
+time=$(date '+%I:%M')
 
-echo "󰧒 %{T2}$date%{T-}"
+echo "|%{F#ffffff} $date : $time"
+
 
 
