@@ -9,18 +9,20 @@ indicate_hidden = yes
 shrink = yes
 line_height = 0
 startup_notification = true
+#corner_radius =17
 
 
 separator_height = 5
-padding = 4
-horizontal_padding = 20
+padding = 5
+horizontal_padding = 22
+
 
 frame_width = 0
 frame_color = "#3d3d5c"
 separator_color = "#e5f5f5"
-font = Cream Cake 18
+font = Nasalization 11
 markup = full
-format = "<span size='x-large' font_desc='Bad Signal 12'  foreground='#98a0d9'>%s</span>\n%b"
+format = "<span size='x-large' font_desc='BAD GRUNGE 15'  foreground='#98a0d9'>%s</span>\n%b"
 alignment = center
 vertical_alignment = center
 idle_threshold = 120
@@ -37,15 +39,15 @@ always_run_script = true
 verbosity = mesg
 transparency = 0
 
-icon_position = left
-min_icon_size = 0
-max_icon_size = 80
-icon_path = /usr/share/icons/Papirus-Light/48x48/actions:/home/gzr/.icons/Reversal-blue/apps/scalable/:/usr/share/icons/Papirus-Light/48x48/devices:/usr/share/icons/Papirus-Light/48x48/emblems:/usr/share/icons/Papirus-Light/48x48/emotes:/usr/share/icons/Papirus-Light/48x48/mimetypes:/usr/share/icons/Papirus-Light/48x48/places:/usr/share/icons/Papirus-Light/48x48/status
+icon_position = right
+min_icon_size = 30
+max_icon_size = 50
+icon_path = /usr/share/icons/Papirus-Dark/32x32/actions:/home/gzr/.icons/Reversal-blue/apps/scalable/:/usr/share/icons/Papirus-Dark/32x32/devices:/usr/share/icons/Papirus-Dark/32x32/emblems:/usr/share/icons/Papirus-Dark/32x32/emotes:/usr/share/icons/Papirus-Dark/32x32/mimetypes:/usr/share/icons/Papirus-Dark/32x32/places:/usr/share/icons/Papirus-Dark/32x32/status
 
 
 browser = /usr/bin/firefox -new-tab
-mouse_left_click = close_current
-mouse_middle_click = do_action
+mouse_left_click = do_action
+mouse_middle_click = close_current
 mouse_right_click = close_all
 
 [shortcuts]
@@ -55,12 +57,12 @@ history = ctrl+Escape
 context = ctrl+shift+u
 
 [urgency_low]
-timeout = 10
+timeout = 6
 background = "#141720"
 foreground = "#dfdfdf"
 
 [urgency_normal]
-timeout = 10
+timeout = 6
 background = "#141720"
 foreground = "#dfdfdf"
 
@@ -68,7 +70,6 @@ foreground = "#dfdfdf"
 timeout = 0
 background = "#141720"
 foreground = "#bf616a"
-
 
 
 
