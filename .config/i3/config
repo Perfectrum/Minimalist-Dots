@@ -1,11 +1,10 @@
-
 ###################set mod key###################
 
 set $mod Mod1
 
 ###################set font###################
 
-font pango:Noto Mono Regular 13
+font pango: Ubuntu Italic 9
 
 ###################start a terminal###################
 
@@ -46,10 +45,11 @@ bindsym $mod+n split h
 # split in vertical orientation
 bindsym $mod+v split v 
 
-bindsym $mod+m workspace back_and_forth
+bindsym $mod+bracketright workspace next
+bindsym $mod+bracketleft workspace prev
 
 # enter fullscreen mode for the focused container
-#bindsym $mod+f fullscreen toggle
+bindsym $mod+shift+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+Shift+t layout stacking
@@ -57,7 +57,9 @@ bindsym $mod+s layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+space floating toggle ;; move position center ;; resize set 600 400  ;; mode "moveit"
+bindsym $mod+space floating toggle ;; resize set 600 400  ;; move window to position 20 px 40 px  ;; mode "moveit"
+bindsym $mod+shift+space floating toggle ;; resize set 600 400  ;; move window to position 1307 px 40 px  ;; mode "moveit"
+bindsym $mod+control+space floating toggle ;; resize set 850 850  ;; move window to position 60 px 100 px  ;; mode "moveit"
 
 # change focus between tiling / floating windows
 bindsym $mod+w focus mode_toggle
@@ -68,6 +70,8 @@ bindsym $mod+w focus mode_toggle
 # focus the child container
 #bindsym $mod+d focus child
 
+
+
 ###################resize window################### 
 
 ## toggle resize mode ##
@@ -77,19 +81,18 @@ bindsym $mod+x mode "resize"
 mode "resize" {
  
         bindsym h resize shrink width 5 px or 5 ppt
-        bindsym j resize grow height 5 px or 5 ppt
-        bindsym k resize shrink height 5 px or 5 ppt
+        bindsym k resize grow height 5 px or 5 ppt
+        bindsym j resize shrink height 5 px or 5 ppt
         bindsym l resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
         bindsym n resize shrink width 20 px or 20 ppt ;; resize shrink height 25 px or 25 ppt
-        bindsym Down resize grow height 20 px or 20 ppt
-        bindsym Up resize shrink height 20 px or 20 ppt
+        bindsym Down resize grow height 15 px or 15 ppt
+        bindsym Up resize shrink height 15 px or 15 ppt
         bindsym m resize grow width 25 px or 25 ppt ;; resize grow height 20 px or 20 ppt
-        bindsym Left resize shrink width 20 px or 20 ppt
-        bindsym Right resize grow width 20 px or 20 ppt 
-        bindsym Escape mode "default"
-        
+        bindsym Left resize shrink width 15 px or 15 ppt
+        bindsym Right resize grow width 15 px or 15 ppt 
+        bindsym z mode "default"
       
 }
 
@@ -102,7 +105,7 @@ mode "moveit" {
     bindsym Down move down 35px
     bindsym Right move right 35px
     bindsym Escape mode "default"
-   
+    bindsym z mode "default"
 
  bindsym k move up  5px 
  bindsym h move left 5px
@@ -168,9 +171,9 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m ' Do you really want to exit 
 
 # Move the currently focused container to the scratchpad which contains
 # floating containers available on all workspaces
-bindsym $mod+shift+F5 move scratchpad
+bindsym $mod+Shift+y move scratchpad
 # Show/hide the scratchpad
-bindsym $mod+F5 scratchpad show
+bindsym $mod+y scratchpad show
 
 ################### set shut down, restart and locking features ###################
 
@@ -188,18 +191,19 @@ bindsym $mod+F5 scratchpad show
 ################### screenshot ###################
 
 # Screenshot of entire desktop
-bindsym $mod+F4       exec --no-startup-id scrot -e 'feh $f -x' -d 2 & notify-send -i /home/darkhorze/.icons/Reversal-grey/apps/scalable/digikam.svg " Screenshot "      
+bindsym $mod+F4       exec --no-startup-id scrot -e 'feh $f -x' -d 2 
 # Screenshot of focused window
-bindsym $mod+Shift+F4 exec --no-startup-id scrot -u -e 'feh $f -x' & notify-send -i /home/darkhorze/.icons/Reversal-grey/apps/scalable/digikam.svg " Screenshot "      
+bindsym $mod+Shift+F4 exec --no-startup-id scrot -u -e 'feh $f -x' & notify-send -i ~/.icons/Reversal-grey/apps/scalable/digikam.svg " Screenshot "      
 
 ################### assign specific apps to keybindings ###################
 
-bindsym $mod+d exec --no-startup-id rofi -show drun -eh 2 
+bindsym $mod+d exec --no-startup-id rofi -theme  ~/.config/rofi/rofiapps/launcher/applauncher.rasi  -show drun -eh 2
+bindsym $mod+p exec --no-startup-id  rofi  -theme ~/.config/rofi/rofiapps/rofiwindowswitcher/altta.rasi  -show window
 bindsym $mod+f exec firefox
 bindsym $mod+t exec thunar
 bindsym $mod+Shift+m exec vscodium
 bindsym $mod+Shift+g exec gsimplecal
-bindsym $mod+Shift+x exec xfce4-clipman-history
+bindsym $mod+Shift+x exec xfce4-clipman-history 
 
 
 ################### assign apps to workspace ###################
@@ -220,9 +224,9 @@ bindsym $mod+Shift+x exec xfce4-clipman-history
 
 # Set inner/outer gaps
 gaps inner 10
-gaps outer 9
-gaps bottom 0
-gaps top 42
+gaps outer 10
+gaps bottom 10
+gaps top 35
 #workspace $ws8 gaps inner 0
 #workspace $ws8 gaps outer 0
 
@@ -257,20 +261,20 @@ exec_always --no-startup-id nm-applet
 #exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec_always --no-startup-id autotiling
 exec --no-startup-id volumeicon
-exec --no-startup-id xfce4-clipman
+exec --no-startup-id xfce4-clipman 
 
 ################## change wallpaper ######################
 
-exec_always --no-startup-id feh --bg-fill /home/gzr/Downloads/beautiful-morning-minimal-4k-if-1920x1080.jpg
+exec_always --no-startup-id feh --bg-fill ~/Downloads/bridge.jpg
 ################# keybindin gs to custom script initialization ###################
 
 ## to start polybar
 
-exec_always --no-startup-id /home/gzr/.config/polybar/launch.sh &
+exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
 ############## to start rofi widgets ###############
 
-bindsym $mod+c exec  /home/gzr/.config/polybar/scripts/powermenu.sh &
+bindsym $mod+c exec  ~/.config/rofi/rofiapps/rofishutdown/shutdown.sh &
 
 
 
@@ -278,9 +282,9 @@ for_window [class=".*"] border pixel 1
 
 
 # class                   border  backgr. text    
-client.focused         #a6a6a6 #a6a6a6 #a6a6a6
-client.focused_inactive #171c2b #171c2b #171c2b
-client.unfocused        #171c2b #171c2b #171c2b
+client.focused     #737373 #737373 #262626
+client.focused_inactive #171c2b #171c2b #666666
+client.unfocused        #171c2b #171c2b #666666
 #client.urgent           #f2f2f2 #f2f2f2 #f2f2f2
  
 #default_border pixel 1
@@ -299,8 +303,17 @@ for_window [class="^feh"] border pixel 0
 
 
 
-bindsym $mod+b	exec --no-startup-id xbacklight -dec 4 && notify-send -i /home/gzr/.icons/Reversal-blue/apps/scalable/gcompris-edit.svg " 󰃝 " "$(light -G)%" &       
-bindsym $mod+g	exec --no-startup-id xbacklight -inc 5 && notify-send -i /home/gzr/.icons/Reversal-blue/apps/scalable/gcompris-edit.svg " 󰃞 " "$(light -G)%" &
+bindsym $mod+b	exec --no-startup-id xbacklight -dec 4       
+bindsym $mod+g	exec --no-startup-id xbacklight -inc 5 
+
+
+
+
+
+
+
+
+
 
 
 
