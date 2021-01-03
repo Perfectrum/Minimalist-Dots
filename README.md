@@ -16,7 +16,7 @@
 - Compositor: [Picom](https://github.com/ibhagwan/picom)
 - FM: Ranger,Thunar
 - WB: Firefox With [minimal-functional-fox-Theme](https://github.com/mut-ex/minimal-functional-fox) & [StartPage](https://github.com/sadparadiseinhell/tea-green)
-- Fonts: Iosevka,Hack,[Material-Designs-Icons](https://github.com/Templarian/MaterialDesign-Font),[BADGRUNGE](https://www.dafont.com/bad-grunge.font),[Nasalization](https://www.dafont.com/nasalization.font)
+- Fonts: Iosevka,Hack,[Material-Designs-Icons](https://github.com/Templarian/MaterialDesign-Font),[kenyan-coffee](https://www.dafont.com/kenyan-coffee.font),[Nasalization](https://www.dafont.com/nasalization.font)
 - Fetch: [Fet.sh](https://github.com/6gk/fet.sh)
 - OtherApps: CAVA,Htop
 - MusicPlayer: Spotify
