@@ -4,7 +4,7 @@
 
 ## Preview
 
-![Screenshot1](https://github.com/Eloysheyin/Minimalist-Dots/blob/master/scrot2020dec.png)
+![Screenshot1](https://github.com/Eloysheyin/Minimalist-Dots/blob/master/Scrot2021.png)
 
 
 ## Details
